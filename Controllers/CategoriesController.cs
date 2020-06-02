@@ -12,8 +12,11 @@ namespace Lab2.Controllers
         {
             return View();
         }
-        public IActionResult Details(string Category)
+        public IActionResult Details(string category)
         {
+            // Storing the selected Category in the ViewBag Container
+            //ViewBag automatically passes back to the view that loads.
+            ViewBag.categories = category;
             return View();
         }
     }
